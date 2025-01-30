@@ -1,12 +1,78 @@
+body {
+	background-color: #ffebcd; /* Color de fondo similar al del GIF */
+	margin: 0;
+	padding: 0;
+}
 
-/* 
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.header {
+	margin: 50px 0 20px 0;
+	color: #8b4513; /* Color marrón oscuro para el encabezado */
+}
 
-*/
+.col {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 80px;
+	color: #fff; /* Texto en blanco para el contraste */
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	background-color: #ff4500; /* Color naranja intenso para las celdas */
+}
+
+.col:hover {
+	background-color: #ffa500; /* Color naranja más claro al pasar el mouse */
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	margin: 0.5rem;
+	background-color: #32cd32; /* Color verde para los botones */
+	color: #fff; /* Texto en blanco para los botones */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #28a745; /* Color verde más oscuro al pasar el mouse */
+}
+
+input {
+	padding: 0.8rem;
+	text-align: center;
+	margin: 0.5rem;
+	border: 2px solid #cd853f; /* Color marrón claro para los bordes de los inputs */
+	border-radius: 5px;
+}
+
+.container-players {
+	background-color: #ffe4b5; /* Color de fondo similar al del GIF para el contenedor de jugadores */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.winner-color {
+	color: #ff0000; /* Color rojo para el texto del ganador */
+	font-weight: bold;
+}
